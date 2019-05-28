@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Zno.DAL.Entities
@@ -11,10 +11,12 @@ namespace Zno.DAL.Entities
         /// <summary>
         /// Идентификатор
         /// </summary>
+
         [Key]
         [Required]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+
 
         /// <summary>
         /// Тип ответа
